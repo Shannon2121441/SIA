@@ -1,0 +1,84 @@
+html{ margin: 0; padding: 0;}
+body{
+    font-family: 'Geologica', sans-serif;
+    font-size: 18px;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+}
+#container{
+  height:100vh auto;
+}
+#wrapper{
+  width: 95%;
+  min-height: 600px auto;
+  padding:10px;
+  margin: 0 auto;
+  background-color: #ffffff92;
+  font-family: 'Geologica', sans-serif;
+  font-size: 18px;
+  border-radius: 25px;
+  border: 3px solid #2f424d;
+  display: block;
+}
+#content-wrapper{
+    width: 95%;
+    min-height: 600px auto;
+    padding:10px;
+    margin: 0 auto;
+    background-color: #ffffff92;
+    font-family: 'Geologica', sans-serif;
+    font-size: 18px;
+    border-radius: 25px;
+    border: 3px solid #2f424d;
+    display: block;
+    text-align: center;
+}
+#header{
+    width: 98%;
+    height: 55px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 50px;
+    color: black;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+#menu{
+    height: 24px auto;
+    width: 98%;
+    margin: 0 auto;
+    font-size: 22px;
+}
+#spotify{
+    width: 25%;
+    padding: 10px;
+    min-height: 600px;
+    height:100vh auto;
+    margin: 5px auto;
+    background-color: #49df7b;
+    border-radius: 25px;
+    border: 3px solid #2f424d;
+    display: inline-block;
+}
+#content{
+    width: 70%;
+    padding: 10px;
+    min-height: 600px;
+    height:100vh auto;
+    margin: 5px auto;
+    background-color: #ffabff;
+    border-radius: 25px;
+    border: 3px solid #2f424d;
+    display: inline-block;
+}
+#subcontent{
+    width: 98%;
+    padding: 4px;
+    height:100vh;
+    margin: 10px auto;
+}
+.move-right{
+    float: right;
+    margin-right: 4px;
+}
