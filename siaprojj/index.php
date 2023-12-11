@@ -9,6 +9,8 @@ $id = (isset($_GET['id']) && $_GET['id'] != '') ? $_GET['id'] : '';
 <head>
     <title>TRIQUETRA</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,23 +20,34 @@ $id = (isset($_GET['id']) && $_GET['id'] != '') ? $_GET['id'] : '';
 <body>
 <div id="container">
     <div id="header">
-      TRIQUETRA
+    TOMORROW x TOGETHER
     </div>
     <div id="wrapper">
             <div id="menu">
                 <a href="index.php">Home</a> | 
-                <a href="index.php?page=search">Search</a> | 
-                <a href="logout.php" class="move-right">Log In<b> |</b></a>
+                <a href="index.php?page=spotify">Spotify</a> | 
+                <a href="index.php?page=giphy">Gif</a> | 
+                <a href="index.php?page=news">News</a>
             </div>
     </div>
     <div id="content-wrapper">
-            <div id="spotify">
-                Spotify API here
-            </div>
-            <div id="content">
-                Instagram API here
-            </div>
+    <?php
+        switch($page){
+            case 'spotify':
+                require_once 'spotify/index.php';
+            break;
+            case 'giphy':
+                require_once 'giphy/index.php';
+            break;
+            case 'news':
+                require_once 'news/index.php';
+            break;
+            default:
+                require_once 'about/index.php';
+            break;
+        }
+    ?>
     </div>
-</div>
+    
 </body>
 </html>
