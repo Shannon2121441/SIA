@@ -78,7 +78,7 @@ body{
     display: inline-block;
 }
 #about img.med-image {
-    width: 45%; /* You can adjust the percentage or use a fixed value like px or rem */
+    width: 40%; /* You can adjust the percentage or use a fixed value like px or rem */
     height: auto; /* Maintain the aspect ratio */
   }  
 .move-right{

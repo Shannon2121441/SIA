@@ -20,13 +20,13 @@ $id = (isset($_GET['id']) && $_GET['id'] != '') ? $_GET['id'] : '';
 <body>
 <div id="container">
     <div id="header">
-    TOMORROW x TOGETHER
+    K-POP
     </div>
     <div id="wrapper">
             <div id="menu">
                 <a href="index.php">Home</a> | 
                 <a href="index.php?page=spotify">Spotify</a> | 
-                <a href="index.php?page=giphy">Gif</a> | 
+                <a href="index.php?page=giphy">GIFs</a> | 
                 <a href="index.php?page=news">News</a>
             </div>
     </div>
